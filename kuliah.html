@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ringkasan materi perkuliahan Adhika: Cloud Computing, SaaS, dan Web Hosting.">
+  <title>Ringkasan Materi Kuliah &mdash; Adhika</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html">ADHIKA.DEV</a>
+      <div class="nav-links">
+        <a href="index.html">&larr; Beranda</a>
+        <a href="index.html#tentang">Tentang</a>
+        <a href="index.html#kontak">Kontak</a>
+        <a href="kuliah.html" class="nav-pill active">Catatan Kuliah</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <header class="page-header">
+      <div class="eyebrow">Catatan Perkuliahan &middot; Setengah Semester</div>
+      <h1 class="page-title">Ringkasan Materi Kuliah</h1>
+      <p class="intro">Memo dan resume materi kuliah seputar Cloud Computing, Software as a Service (SaaS), dan Web Server Hosting.</p>
+    </header>
+  </div>
+
+  <!-- Sticky Pill Navigasi Topik -->
+  <nav class="topic-nav" aria-label="Navigasi topik catatan">
+    <div class="container">
+      <div class="topic-nav-inner">
+        <a href="#cloud" class="topic-pill active">1. Cloud Computing</a>
+        <a href="#kelemahan" class="topic-pill">2. Kelemahan Cloud</a>
+        <a href="#saas" class="topic-pill">3. SaaS &amp; POS</a>
+        <a href="#contoh" class="topic-pill">4. Contoh SaaS</a>
+        <a href="#hosting" class="topic-pill">5. Web Hosting</a>
+        <a href="#kesimpulan" class="topic-pill">6. Kesimpulan</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Topik 1 -->
+    <section id="cloud" class="content-section">
+      <span class="tag">Topik 01</span>
+      <h2>Jenis-Jenis Cloud Computing</h2>
+      <p>Cloud Computing adalah teknologi yang memungkinkan pengguna mengakses sumber daya komputasi, seperti server, penyimpanan, jaringan, dan aplikasi melalui internet.</p>
+
+      <h3>A. Berdasarkan Model Layanan (Service Model)</h3>
+      <div class="cards">
+        <article class="memo-card">
+          <h3>1. IaaS</h3>
+          <p><b>Infrastructure as a Service</b> menyediakan infrastruktur IT virtual, seperti server, penyimpanan, dan jaringan. Pengguna dapat mengelola sistem operasi serta aplikasi sesuai kebutuhan.</p>
+          <p><b>Contoh:</b> Amazon EC2 dan Google Compute Engine.</p>
+        </article>
+
+        <article class="memo-card">
+          <h3>2. PaaS</h3>
+          <p><b>Platform as a Service</b> menyediakan platform untuk mengembangkan dan menjalankan aplikasi tanpa harus mengelola infrastruktur server secara langsung.</p>
+          <p><b>Contoh:</b> Google App Engine dan Heroku.</p>
+        </article>
+
+        <article class="memo-card">
+          <h3>3. SaaS</h3>
+          <p><b>Software as a Service</b> menyediakan aplikasi siap pakai melalui internet tanpa pengguna perlu mengelola server dan pemeliharaan aplikasi.</p>
+          <p><b>Contoh:</b> Gmail, Google Workspace, dan Microsoft 365.</p>
+        </article>
+      </div>
+
+      <h3>B. Berdasarkan Model Penerapan (Deployment Model)</h3>
+      <div class="cards">
+        <article class="memo-card">
+          <h3>1. Public Cloud</h3>
+          <p>Layanan cloud dari pihak ketiga yang digunakan banyak pelanggan melalui infrastruktur bersama.</p>
+          <p><b>Contoh:</b> AWS dan Microsoft Azure.</p>
+        </article>
+
+        <article class="memo-card">
+          <h3>2. Private Cloud</h3>
+          <p>Infrastruktur cloud yang didedikasikan untuk satu organisasi sehingga pengelolaan dan pengaturan keamanannya dapat disesuaikan.</p>
+        </article>
+
+        <article class="memo-card">
+          <h3>3. Hybrid Cloud</h3>
+          <p>Kombinasi Public Cloud dan Private Cloud yang memungkinkan integrasi serta pemindahan data atau aplikasi di antara keduanya.</p>
+        </article>
+
+        <article class="memo-card">
+          <h3>4. Community Cloud</h3>
+          <p>Infrastruktur cloud yang digunakan bersama oleh beberapa organisasi dengan kebutuhan, kebijakan, atau kepentingan serupa, misalnya institusi pendidikan.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Topik 2 -->
+    <section id="kelemahan" class="content-section">
+      <span class="tag">Topik 02</span>
+      <h2>Kelemahan Layanan Cloud Computing</h2>
+      <ol>
+        <li><b>Ketergantungan pada koneksi internet:</b> koneksi tidak stabil dapat menghambat akses data atau aplikasi.</li>
+        <li><b>Risiko keamanan dan privasi data:</b> data berisiko bocor, dicuri, atau diakses tanpa izin jika keamanan tidak memadai.</li>
+        <li><b>Vendor lock-in:</b> pengguna dapat kesulitan berpindah penyedia karena perbedaan teknologi, format data, konfigurasi, dan biaya migrasi.</li>
+        <li><b>Biaya dapat meningkat:</b> biaya bisa bertambah seiring peningkatan penyimpanan, komputasi, dan lalu lintas data.</li>
+        <li><b>Downtime:</b> gangguan penyedia cloud dapat membuat layanan tidak tersedia sementara.</li>
+        <li><b>Kontrol infrastruktur terbatas:</b> pengguna tidak selalu memiliki kendali penuh atas server, sistem operasi, dan konfigurasi.</li>
+        <li><b>Risiko kehilangan data:</b> kesalahan konfigurasi, penghapusan tidak sengaja, atau serangan siber dapat menyebabkan data hilang.</li>
+        <li><b>Kepatuhan dan lokasi data:</b> organisasi perlu memperhatikan aturan perlindungan data dan lokasi penyimpanan informasi.</li>
+      </ol>
+      <div class="note">
+        <b>💡 Hal penting:</b> Penggunaan cloud tetap memerlukan pengaturan keamanan yang ketat, kontrol hak akses, dan pencadangan (backup) data berkala.
+      </div>
+    </section>
+
+    <!-- Topik 3 -->
+    <section id="saas" class="content-section">
+      <span class="tag">Topik 03</span>
+      <h2>Keuntungan dan Kekurangan SaaS pada Aplikasi Penjualan POS</h2>
+      <p>SaaS (Software as a Service) adalah model penyediaan perangkat lunak melalui internet. Dalam aplikasi POS (Point of Sales), pengguna dapat mengelola transaksi penjualan menggunakan aplikasi yang disediakan sebagai layanan terpusat.</p>
+      <p>Referensi pertanyaan menyebut aplikasi <b>Mocha</b> sebagai contoh POS. Uraian berikut membahas keuntungan dan kekurangan aplikasi POS berbasis SaaS secara umum; rincian fitur khusus Mocha dapat disesuaikan dengan kebutuhan aplikasi.</p>
+
+      <div class="two-cols">
+        <div class="col-box">
+          <h3>✅ Keuntungan</h3>
+          <ul>
+            <li>Dapat diakses melalui internet dari perangkat yang didukung.</li>
+            <li>Tidak perlu membangun dan mengelola server sendiri.</li>
+            <li>Pembaruan aplikasi umumnya dikelola otomatis oleh penyedia layanan.</li>
+            <li>Data penjualan dapat dikelola secara terpusat dan real-time.</li>
+            <li>Membantu pemilik usaha memantau transaksi dan operasional dengan mudah.</li>
+            <li>Biaya awal infrastruktur jauh lebih rendah dibanding membangun sistem sendiri.</li>
+          </ul>
+        </div>
+
+        <div class="col-box">
+          <h3>⚠️ Kekurangan</h3>
+          <ul>
+            <li>Bergantung pada koneksi internet jika aplikasi membutuhkan koneksi online.</li>
+            <li>Dapat menimbulkan biaya berlangganan berkala (subscription model).</li>
+            <li>Data usaha disimpan atau diproses oleh pihak ketiga (penyedia layanan).</li>
+            <li>Fitur dan kustomisasi mengikuti ketentuan serta batasan penyedia.</li>
+            <li>Gangguan layanan dari penyedia (server down) dapat menghambat transaksi.</li>
+            <li>Perlu memperhatikan keamanan akun pengguna, kontrol otorisasi, dan backup data.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topik 4 -->
+    <section id="contoh" class="content-section">
+      <span class="tag">Topik 04</span>
+      <h2>Contoh Aplikasi SaaS Berdasarkan Bidang</h2>
+      <div class="cards">
+        <article class="memo-card">
+          <h3>1. Hotel Reservation</h3>
+          <p>Aplikasi reservasi hotel berbasis SaaS membantu pengelola mengatur pemesanan dan ketersediaan kamar, data tamu, serta jadwal check-in/check-out secara terpadu.</p>
+          <p><b>Contoh layanan:</b> Cloudbeds dan Little Hotelier.</p>
+        </article>
+
+        <article class="memo-card">
+          <h3>2. Rumah Sakit</h3>
+          <p>Sistem rumah sakit berbasis SaaS membantu pendaftaran pasien, jadwal dokter, rekam medis elektronik, administrasi, dan koordinasi alur pelayanan medis.</p>
+          <p><b>Contoh kategori:</b> Cloud-based Hospital Management System (HMS) atau Electronic Medical Record (EMR).</p>
+        </article>
+
+        <article class="memo-card">
+          <h3>3. Bidang Kuliner</h3>
+          <p>Aplikasi SaaS untuk usaha kuliner membantu pencatatan pesanan kasir, manajemen inventaris/stok bahan, meja restoran, dan pelaporan keuangan berkala.</p>
+          <p><b>Contoh layanan:</b> Toast dan Square for Restaurants.</p>
+        </article>
+      </div>
+      <p class="muted">* Contoh nama layanan di atas merupakan ilustrasi penerapan nyata SaaS di berbagai industri.</p>
+    </section>
+
+    <!-- Topik 5 -->
+    <section id="hosting" class="content-section">
+      <span class="tag">Topik 05</span>
+      <h2>Web Server Hosting dan Publikasi Website Pribadi</h2>
+      <p>Web hosting adalah layanan yang menyediakan tempat dan sumber daya server agar file website dapat disimpan serta diakses publik melalui internet. Web server menerima permintaan dari browser pengunjung lalu mengirimkan kembali file website (HTML, CSS, JS, dan media).</p>
+
+      <h3>Tiga Contoh Layanan Hosting</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Layanan</th>
+              <th>Jenis</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>GitHub Pages</b></td>
+              <td>Static Website Hosting</td>
+              <td>Menerbitkan website statis langsung dari repository GitHub (HTML, CSS, JS, dan aset media). Gratis dan sangat cocok untuk portofolio.</td>
+            </tr>
+            <tr>
+              <td><b>Netlify</b></td>
+              <td>Web Hosting &amp; Deployment Platform</td>
+              <td>Mendukung publikasi website statis dengan otomatisasi build / CI-CD yang terhubung ke Git, custom domain, dan sertifikat SSL gratis.</td>
+            </tr>
+            <tr>
+              <td><b>Cloudflare Pages</b></td>
+              <td>Static &amp; Edge Hosting Platform</td>
+              <td>Menyajikan aset statis dan web frontend melalui jaringan edge global Cloudflare dengan kecepatan akses tinggi dan perlindungan DDoS.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">* Ketentuan paket gratis, batas kuota bandwidth, dan fitur masing-masing platform dapat berubah sewaktu-waktu. Selalu periksa dokumentasi resmi terbaru.</p>
+    </section>
+
+    <!-- Topik 6 -->
+    <section id="kesimpulan" class="content-section">
+      <span class="tag">Rangkuman Akhir</span>
+      <h2>Kesimpulan</h2>
+      <ul>
+        <li>Cloud Computing menyediakan akses sumber daya komputasi secara fleksibel melalui internet.</li>
+        <li>Model layanan cloud terdiri dari <b>IaaS</b>, <b>PaaS</b>, dan <b>SaaS</b>.</li>
+        <li>Model penerapan cloud terdiri dari <b>Public</b>, <b>Private</b>, <b>Hybrid</b>, dan <b>Community Cloud</b>.</li>
+        <li>Cloud menawarkan efisiensi tinggi, namun pengguna harus mengantisipasi risiko seperti dependensi internet, privasi data, vendor lock-in, dan potensi downtime.</li>
+        <li>SaaS memudahkan pengguna memakai aplikasi tanpa perlu memelihara server dan kode aplikasi secara mandiri.</li>
+        <li>Web hosting memungkinkan website dipublikasikan secara global; GitHub Pages, Netlify, dan Cloudflare Pages adalah opsi praktis dan populer untuk publikasi web.</li>
+      </ul>
+
+      <div class="summary">
+        <b>📌 Inti Materi:</b> Pahami perbedaan model layanan dan penerapan cloud, pertimbangkan kelebihan serta kekurangan sistem berbasis SaaS, lalu kuasai proses dasar mempublikasikan website ke platform web hosting.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>&copy; <span id="year"></span> Adhika &middot; Catatan Perkuliahan Sistem Komputer.</div>
+      <div><a href="index.html" class="contact-link">&larr; Kembali ke Beranda</a></div>
+    </div>
+  </footer>
+</body>
+</html>
